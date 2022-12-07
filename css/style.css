@@ -1,13 +1,25 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto/Roboto-Medium.ttf);
+}
+
+header {
+    height: 120px;
+}
+.bg-primary {
+    background-color: #83B263!important;
+}
+.navbar-brand {
+    margin-bottom: -30px;
+}
+.main-nav {
+    margin-bottom: -130px;
+}
 .main-menu {
     margin-top: 130px;
 }
-header {
-    height: 133px;
-}
-.navbar {
-    height: 133px;
-    background-color: #83b263;
-    padding-top: 45px;
+.menu-label {
+    font-family: "Roboto", 'Courier New', Courier;
 }
 #slider {
     background-color: #BAD1A5;
@@ -17,11 +29,6 @@ header {
 }
 .carousel-inner {
     padding: 0;
-}
-#navbarCollapse a {
-    color: #DF8243;
-    font-weight: bolder;
-    text-align: center;
 }
 #fonctionnement {
     background-color: #BAD1A5;
@@ -38,7 +45,4 @@ header {
 #newsletter h2  {
     margin-top: 40px;
     margin-bottom: 60px;
-}
-#reseaux {
-    flex
 }
