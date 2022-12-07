@@ -1,0 +1,44 @@
+.main-menu {
+    margin-top: 130px;
+}
+header {
+    height: 133px;
+}
+.navbar {
+    height: 133px;
+    background-color: #83b263;
+    padding-top: 45px;
+}
+#slider {
+    background-color: #BAD1A5;
+}
+.carousel {
+    padding: 120px 0 ;
+}
+.carousel-inner {
+    padding: 0;
+}
+#navbarCollapse a {
+    color: #DF8243;
+    font-weight: bolder;
+    text-align: center;
+}
+#fonctionnement {
+    background-color: #BAD1A5;
+}
+#fonctionnement h2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#produits h2 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+#newsletter h2  {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+#reseaux {
+    flex
+}
