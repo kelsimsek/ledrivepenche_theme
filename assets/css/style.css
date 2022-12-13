@@ -15,6 +15,12 @@
     src: url(../font/Playfair/PlayfairDisplay-Bold.ttf);
 }
 
+/*
+/***************************************/
+p, h3, h4, h5 {
+    font-family: "Roboto",'Courier New', Courier;
+}
+
 /* HELPERS PERSO
 /***************************************/
 .picto {
@@ -28,6 +34,29 @@
 .titre {
     font-family: "Playfair_bold",'Courier New', Courier;
 }
+.badge {    
+    top: 25%;
+    right: 5%;
+    height: 90px;
+    width: 90px;
+    z-index: 20;
+}
+.badge img {    
+    max-width: 65%;
+}
+.badge h5 {
+    color: black;
+    font-size: 1em!important;
+}
+.z-index-1 {
+    z-index: 10;
+}
+.z-index-2 {
+    z-index: 20;
+}
+.z-index-3 {
+    z-index: 30;
+}
 /* OVER BOOTSTRAP
 /***************************************/
 .bg-primary {
@@ -35,6 +64,9 @@
 }
 .bg-secondary {
     background-color: #BAD1A5!important;
+}
+.bg-dark {
+    background-color: #707070!important;
 }
 .text-primary {
     color: #DF8243!important;
@@ -45,8 +77,10 @@
 .carousel {
     padding: 120px 0 ;
 }
-.carousel-inner {
-    padding: 0;
+.carousel-in {
+    position: relative;
+    padding: 0;    
+    overflow: hidden;
 }
 
 /* HEADER
