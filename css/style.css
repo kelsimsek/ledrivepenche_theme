@@ -1,14 +1,62 @@
+/* FONT
+/***************************************/
 @font-face {
     font-family: "Roboto";
     src: url(../font/Roboto/Roboto-Medium.ttf);
 }
 
-header {
-    height: 120px;
+@font-face {
+    font-family: "Playfair";
+    src: url(../font/Playfair/PlayfairDisplay-Medium.ttf);
 }
+
+/* HELPERS PERSO
+/***************************************/
+.picto {
+    transition: all .2s linear 0s;
+    max-width: 100px;
+    width: 100%;
+}
+.picto:hover {
+    transform: scale(1.1);
+}
+.title {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+/* OVER BOOTSTRAP
+/***************************************/
 .bg-primary {
     background-color: #83B263!important;
 }
+.bg-secondary {
+    background-color: #BAD1A5!important;
+}
+.text-primary {
+    color: #DF8243!important;
+}
+.carousel {
+    padding: 120px 0 ;
+}
+.carousel-inner {
+    padding: 0;
+}
+
+/* HEADER
+/***************************************/
+header {
+    height: 120px;
+}
+.logo {
+    transition: all .2s linear 0s;
+}
+.logo:hover {
+    transform: rotate(25deg);
+    
+}
+
+/* MENU / NAV
+/***************************************/
 .navbar-brand {
     margin-bottom: -30px;
 }
@@ -21,28 +69,9 @@ header {
 .menu-label {
     font-family: "Roboto", 'Courier New', Courier;
 }
-#slider {
-    background-color: #BAD1A5;
-}
-.carousel {
-    padding: 120px 0 ;
-}
-.carousel-inner {
-    padding: 0;
-}
-#fonctionnement {
-    background-color: #BAD1A5;
-}
-#fonctionnement h2 {
-    margin-top: 60px;
-    margin-bottom: 60px;
+.nav-label {
+    font-family: "Playfair", 'Courier New', Courier;
 }
 
-#produits h2 {
-    margin-top: 40px;
-    margin-bottom: 60px;
-}
-#newsletter h2  {
-    margin-top: 40px;
-    margin-bottom: 60px;
-}
+/* INDEX
+/***************************************/

@@ -13,51 +13,57 @@
   <header class="sticky-top bg-primary">
     <nav class="navbar navbar-expand-lg p-0">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="image/icons/logo_drive.png" alt="Logo du drive penché">
+        <a class="navbar-brand col-3" href="#">
+          <img class="logo img-fluid" src="image/icons/logo_drive.png" alt="Logo du drive penché">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="d-flex d-lg-none col-6 pt-3 justify-content-center">          
+          <a href="/"><img class="nav-link picto" src="image/icons/client.png" alt="" srcset=""></a>
+          <a href="/"><img class="nav-link picto" src="image/icons/panier.png" alt="" srcset=""></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto main-nav">
+        <div class="offcanvas offcanvas-end col-6" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Naviguer...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto main-nav text-center">            
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img class="d-none d-lg-block picto" src="image/icons/Recettes.png" alt="" srcset="">
+                <span class="d-block nav-label text-primary">Recettes</span>
+              </a>
+            </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
-                <img class="d-none d-lg-block" src="image/icons/Ingredients.png" alt="" srcset="">
-                <span class="d-block">Ingrédients</span>
+                <img class="d-none d-lg-block picto" src="image/icons/Ingredients.png" alt="" srcset="">
+                <span class="d-block nav-label text-primary">Ingrédients</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <img class="d-none d-lg-block" src="image/icons/Recettes.png" alt="" srcset="">
-                <span class="d-block">Panier</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <img class="d-none d-lg-block" src="image/icons/Producteurs.png" alt="" srcset="">                
-                <span class="d-block">Les Producteurs</span>
+                <img class="d-none d-lg-block picto" src="image/icons/Producteurs.png" alt="" srcset="">                
+                <span class="d-block nav-label text-primary">Les Producteurs</span>
               </a>              
             </li>
             <li class="nav-item">
               <a class="nav-link">
-                <img class="d-none d-lg-block" src="image/icons/Faq.png" alt="" srcset="">                
-                <span class="d-block">Qui sommes-nous ?</span>
+                <img class="d-none d-lg-block picto" src="image/icons/Faq.png" alt="" srcset="">                
+                <span class="d-block nav-label text-primary">Comment<br>ça marche ?</span>
               </a>
             </li>
           </ul>          
         </div>
-        <div class="d-none d-lg-flex">
+        </div>
+        <div class="d-none d-lg-flex col-3">
           <ul class="navbar-nav">
-            <li class="nav-item"><img class="nav-link" src="image/icons/client.png" alt="" srcset=""></li>
-            <li class="nav-item"><img class="nav-link" src="image/icons/panier.png" alt="" srcset=""></li>              
+            <li class="nav-item"><img class="nav-link picto" src="image/icons/client.png" alt="" srcset=""></li>
+            <li class="nav-item"><img class="nav-link picto" src="image/icons/panier.png" alt="" srcset=""></li>              
           </ul>
-        </div> 
-        <div class="d-flex d-lg-none fixed-bottom p-3">          
-            <a href="/"><img class="nav-link" src="image/icons/client.png" alt="" srcset=""></a>
-            <a href="/"><img class="nav-link" src="image/icons/panier.png" alt="" srcset=""></a>
-          </ul>
-        </div>       
+        </div>        
       </div>
     </nav>
   </header>
@@ -65,7 +71,7 @@
   <!-- END HEADER -->
 
   <!-- HOME --> 
-  <div id="slider" class="carousel slide" data-bs-ride="carousel">
+  <div id="slider" class="carousel slide bg-secondary" data-bs-ride="carousel">
     <div class="carousel-inner container">
       <div class="carousel-item active">
         <img src="./image/landing-img.png" class="d-block w-100" alt="...">
@@ -109,24 +115,24 @@
   </div>
   <!-- section produits end -->
 
-      <!-- section fonctionnement -->
-      <div id="fonctionnement" >
-        <div class="container mt-5">
-          <div class="row text-center">
-            <h2>Fonctionnement du drive</h2>
+  <!-- section fonctionnement -->
+  <div id="fonctionnement" class="bg-secondary" >
+    <div class="container mt-5">
+      <div class="row text-center">
+        <h2>Fonctionnement du drive</h2>
+          <div class="col-12 col-sm-8 col-lg-4 mb-5">
+              <img src="./image/fonctionnement1.png" class="img-fluid" alt="...">
+          </div>
               <div class="col-12 col-sm-8 col-lg-4 mb-5">
-                  <img src="./image/fonctionnement1.png" class="img-fluid" alt="...">
-              </div>
-                 <div class="col-12 col-sm-8 col-lg-4 mb-5">
-                    <img src="./image/fonctionnement2.png" class="img-fluid" alt="...">        
-                </div>
-              <div class="col-12 col-sm-8 col-lg-4 mb-5">
-                  <img src="./image/fonctionnement3.png" class="img-fluid" alt="...">
-              </div>
-           </div>
+                <img src="./image/fonctionnement2.png" class="img-fluid" alt="...">        
+            </div>
+          <div class="col-12 col-sm-8 col-lg-4 mb-5">
+              <img src="./image/fonctionnement3.png" class="img-fluid" alt="...">
+          </div>
         </div>
-      </div>
-      <!-- section fonctionnement end -->
+    </div>
+  </div>
+  <!-- section fonctionnement end -->
 
 
 
