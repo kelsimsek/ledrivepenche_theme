@@ -17,7 +17,7 @@
 
 /*
 /***************************************/
-p, h3, h4, h5 {
+a, p, h3, h4, h5 {
     font-family: "Roboto",'Courier New', Courier;
 }
 
@@ -32,21 +32,18 @@ p, h3, h4, h5 {
     transform: scale(1.1);
 }
 .titre {
-    font-family: "Playfair_bold",'Courier New', Courier;
+    font-family: "Playfair",'Courier New', Courier;
+    font-size: 3em;
+}
+.titre-produit {
+    font-family: "Roboto",'Courier New', Courier;
+    font-size: 1.2em;
 }
 .badge {    
-    top: 25%;
-    right: 5%;
-    height: 90px;
-    width: 90px;
+    top: 15%;
+    right: 0%;
     z-index: 20;
-}
-.badge img {    
-    max-width: 65%;
-}
-.badge h5 {
-    color: black;
-    font-size: 1em!important;
+    padding: 0;
 }
 .z-index-1 {
     z-index: 10;
@@ -62,8 +59,20 @@ p, h3, h4, h5 {
 .bg-primary {
     background-color: #83B263!important;
 }
+.bg-main-primary {
+    background: linear-gradient(174deg, rgba(130,178,99,0.24) 58.8%, transparent 59%);
+}
+.bg-main-secondary {
+    background: linear-gradient(-8deg, rgba(130,178,99,0.24) 58.8%, transparent 59%);
+}
+.bg-main-tertiary {
+    background: linear-gradient(4deg, rgba(130,178,99,0.24) 58.8%, transparent 59%);
+}
 .bg-secondary {
     background-color: #BAD1A5!important;
+}
+.bg-tertiary {
+    background-color: #DF8243;
 }
 .bg-dark {
     background-color: #707070!important;
@@ -74,6 +83,24 @@ p, h3, h4, h5 {
 .text-secondary {
     color: #707070!important;
 }
+.form-control {
+    padding: 10px;
+    border: 2px #DF8243 solid;
+    border-radius: 3px;
+    width: auto!important;
+}
+.form-control:focus {
+    border-color: #DF5000!important;
+}
+.btn-primary {
+    background-color: #DF8243;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active { 
+    background-color: #DF5000!important;
+}
 .carousel {
     padding: 120px 0 ;
 }
@@ -81,6 +108,18 @@ p, h3, h4, h5 {
     position: relative;
     padding: 0;    
     overflow: hidden;
+}
+@media all and (max-width: 900px) {
+    .carousel-control-prev {
+        left: 0;
+    }
+    .carousel-control-next {
+        right: 0;
+    }   
+    .carousel {
+        background: rgba(130,178,99,0.24);
+        padding: 20px 0;
+    }
 }
 
 /* HEADER
@@ -92,7 +131,7 @@ header {
     transition: all .2s linear 0s;
 }
 .logo:hover {
-    transform: rotate(25deg);
+    transform: rotate(5deg);
     
 }
 
@@ -101,7 +140,7 @@ header {
 .navbar-brand {
     margin-bottom: -30px;
 }
-.main-nav {
+#main-nav {
     margin-bottom: -130px;
 }
 .main-menu {
@@ -113,6 +152,43 @@ header {
 .nav-label {
     font-family: "Playfair", 'Courier New', Courier;
 }
+#main-nav .nav-item {
+    padding: 0 25px;
+}
 
-/* INDEX
+/* BG PICTURES
 /***************************************/
+.bg-pic-producteur {
+    position: absolute;
+    top: 400px;
+    right: 0px;
+    opacity: 0.21;
+}
+
+/* SLIDER
+/***************************************/
+.slider-indicators {
+    border: 3px solid #FB6A09!important;
+    padding: 15px!important;
+    border-radius: 25px;
+    height: 10px!important;
+    width: 10px!important;
+}
+.carousel-indicators .active {
+    background-color: #FB6A09;
+}
+
+/* PRODUITS
+/***************************************/
+.produit {
+    transition: all .2s ease 0s;
+}
+.produit:hover {
+    transform: scale(1.05);
+}
+.badge {
+    transition: all .2s ease 0s;
+}
+.badge:hover {
+    transform: rotate(20deg);
+}
